@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>FACEBOOK FEAR</title>
+  <meta charset="utf-8"/>
+  
+  <base href="http://innerfear.org"/>
+  <link rel="stylesheet" href="css/reset.css"  type="text/css" media="all"/>
+  <link rel="stylesheet" href="css/grid.css"   type="text/css" media="all"/>
+  <link rel="stylesheet" href="css/global.css" type="text/css" media="all"/>
+  <link rel="stylesheet" href="css/fb.css"      type="text/css" media="all"/>
+  <link rel="stylesheet" href="css/buttons.css" type="text/css" media="all"/>
+  
+  <link rel="stylesheet" href="gallery/css/style.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="player/plugin/css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="player2/css/zen.css" type="text/css" />
+                  
+  <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+  
+  <script>
+  
+  (function(){
+    // remove layerX and layerY
+    var all = $.event.props,
+        len = all.length,
+        res = [];
+    while (len--) {
+      var el = all[len];
+      if (el != 'layerX' && el != 'layerY') res.push(el);
+    }
+    $.event.props = res;
+  }());
+  
+  </script>
+  
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>  
+	<script type="text/javascript" src="js/Oswald_400.font.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/atooltip.jquery.js"></script>   
+  <script type="text/javascript" src="js/content_switch.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/superfish.js"></script>  
+  <script type="text/javascript" src="js/jquery.cycle.all.latest.js" ></script>
+  <script type="text/javascript" src="js/forms.js"></script>
+  <script type="text/javascript" src="js/cScroll.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>  
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script> 
+   	
+	<script type="text/javascript" src="player2/js/jquery.grab.js"></script> 
+	<script type="text/javascript" src="player2/js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="player2/js/zen.js"></script>	
+    
+  <!--[if lt IE 9]>
+   <script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+     
+<script>
+  function streamPublish(){ _gaq.push(['_trackPageview', '/button/share']);
+   FB.ui(
+    {
+    method: 'stream.publish',
+                name: 'First Born Fear / Download Album',
+                app_id: '190654247696359',
+                link: 'http://www.facebook.com/innerfear.official?sk=app_190654247696359',
+                redirect_uri: 'http://www.facebook.com/innerfear.official?sk=app_190654247696359',
+                picture: 'http://innerfear.org/cover.png',
+                caption: 'INVITE YOUR BEST FRIEND TO THE DARK SIDE',
+                description: 'we offer you to download our new album absolutely for free - invite friends!             ',
+                next:null,
+                message: 'body'
+    })
+}
+  
+  function publishStream(){
+   streamPublish();
+  }                         
+	  
+		</script>
+              
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28105632-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+        
+              
+</head>
+<body style="width:520px !important; overflow:hidden !important;">  
+       
+<div class="spinner"><div></div></div>
+
+<div class="extra_fb">
+	<div class="bg1">
+		<div class="facebook_24" >
+
+			<!-- ++++++++++ HEADER ++++++++++ -->
+
+			<header>
+                   
+               
+				<span class="date"  style="margin-left:5px;">sunday 1,  2012</span>
+
+				<ul id="top_nav">
+
+         
+					<li ><a target="_blank" href="http://apps.facebook.com/firstbornfear/">view full version</a></li>
+					 <li class="last"><a href="javascript:publishStream()">SHARE</a>&nbsp;&nbsp;</li>
+        
+				</ul>
+              
+			</header>
+
+		</div>
+	</div>
+	
+
+		<div class="facebook_24">
+
+			<!--content -->
+			<article id="content">
+
+      <!-- ++++++++++ LOGO ++++++++++ -->
+
+        <div style="position:absolute;">
+				  <h1  style="margin-left:-205px;"><a href="http://innerfear.org/" target="_blank" id="logo">Inner Fear</a></h1>
+				</div>
+		
+				
+        <div style="height:150px;">&nbsp;</div>
+	 
+	 <div style="height:80px; overflow:hidden">
+				<a href="javascript:sendRequestViaMultiFriendSelector();" onclick="sendRequestViaMultiFriendSelector()" title="Download Album" id="btn-wrap" >
+			<span class="title font1" style="font-size:20px !important;">Download Album</span>
+			
+			<div id="info">
+				<p>
+					<strong>Read Below</strong>
+					<span>and continue</span>
+				</p>
+			</div>
+		</a>
+		</div>  
+		
+		
+		
+		<div class="font1" style="color:#FFF">PLEASE INVITE YOUR BEST FRIEND AND SHARE THIS CONTENT <br>IF YOU WANT TO DOWNLOAD OUR FIRST BORN FEAR ALBUM ABSOLUTELY FOR FREE<br>
+    Press the button above and your download will start immediately after you invite your best friend</div>
+    
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+   
+    
+    <script>
+      FB.init({
+        appId  : '190654247696359',
+        status : true,
+        cookie : true,
+        oauth: true
+      });
+
+   
+    </script>
+    
+    
+    
+				<ul>
+
+    
+ 
+       <!-- ++++++++++++++++++ PICTURES PAGE ++++++++++++++++++--  --> 
+  
+    
+   	
+				</ul>
+
+			</article>
+
+			<!--content end-->
+
+		</div>
+
+	<div class="block"></div>
+
+</div>
+</div>
+<div class="bg1">
+
+		<div class="facebook_24">
+
+			<!--footer -->
+
+			<footer>
+
+
+		       
+				<ul id="icons">
+
+					<li class="first">get in touch</li>
+					<li><a href="https://twitter.com/#!/vmarinchenko" class="normaltip" target="_blank" title="Twitter"><img src="images/icon1.gif" alt=""></a></li>
+					<li><a href="http://www.facebook.com/vitally.marinchenko" target="_blank" class="normaltip" title="Facebook"><img src="images/icon2.gif" alt=""></a></li>
+					<li><a href="http://plus.google.com/110454877446587663171/" target="_blank"  class="normaltip" title="Google+"><img src="images/icon3.gif" alt=""></a></li>
+
+				</ul>
+
+        <!--[if IE]>
+        <a href="http://lv.linkedin.com/in/vitallymarinchenko" target="_blank" id="footer_logo" style="margin-left:-157px;">Vitally Marinchenko</a>
+          
+        <![endif]-->
+
+       
+       <![if !IE]>
+        <a href="http://www.facebook.com/vitally.marinchenko" target="_blank" id="footer_logo" style="margin-left:-195px;">Vitally Marinchenko</a>
+        <![endif]>
+          
+            
+				
+
+				<!-- {%FOOTER_LINK} -->
+            
+			</footer>
+              
+			<!--footer end-->
+            
+		</div>
+             
+</div>
+         
+
+<script>
+
+$(window).load(function() {	
+      
+	$('.spinner').fadeOut();
+ 	$('body').css({overflow:'inherit'})   
+
+})
+
+</script>     
+<script type="text/javascript"> Cufon.now(); </script>
+
+ <div id="fb-root"></div>
+ <script src="//connect.facebook.net/en_US/all.js"></script>
+ <script>
+   FB.init({
+     appId  : '190654247696359',
+     status : true, // check login status
+     cookie : true, // enable cookies to allow the server to access the session
+     xfbml  : true, // parse XFBML
+     redirect_uri: 'http://www.facebook.com/innerfear.official?sk=app_256716857707040',
+     oauth : true // enables OAuth 2.0
+   });
+ </script>
+
+	
+	<script type="text/javascript">
+	window.fbAsyncInit = function() {
+	//FB.Canvas.setSize({ width: 520, height: 999 });
+	}
+</script>
+
+</body>
+</html>                                 
